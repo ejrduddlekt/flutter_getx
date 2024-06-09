@@ -1,0 +1,68 @@
+# Flutter/Dart/Pub 관련
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+/ios/Flutter/.last_build_id
+
+# IntelliJ 관련
+.idea/
+*.iml
+
+# Visual Studio Code 관련
+.vscode/
+*.code-workspace
+
+# Android 관련
+android/.gradle/
+android/app/build/
+android/.idea/
+
+# iOS 관련
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/Flutter/Flutter.podspec
+ios/Flutter/Flutter.xcworkspace/
+ios/.symlinks/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Generated.xcconfig
+
+# Linux 관련
+linux/flutter/ephemeral/
+
+# macOS 관련
+macos/Flutter/ephemeral/
+
+# Windows 관련
+windows/flutter/ephemeral/
+
+# 웹 관련
+web/flutter/ephemeral/
+
+# Firebase 관련
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+
+# Fastlane 관련
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+
+# Flutter 환경 관련
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-version
+
+# 개인 설정 파일 관련
+*.swp
+*.swo
+*.log
+
+# 기타
+*.DS_Store
+*.lock
+*.lock.json
