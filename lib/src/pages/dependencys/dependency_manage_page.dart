@@ -38,7 +38,7 @@ class DependencyManagePage extends StatelessWidget {
                           });
                         }))
                       },
-                  child: Text("Get.lazyPut")),
+                  child: Text("Get.putAsync")),
               ElevatedButton(
                   onPressed: () => {
                         Get.to(GetPut(), binding: BindingsBuilder(() {
@@ -46,7 +46,7 @@ class DependencyManagePage extends StatelessWidget {
                               () => DependencyController());
                         }))
                       },
-                  child: Text("Get.putAsync")),
+                  child: Text("Get.lazyPut")),
 
               //위의 3가지 방식은 싱글톤 방식이었으나, 인스턴스를 여러개 만들 수 있다.
               //접근할 때 마다 게속해서 생성을 하나 잘 사용하진 않는다.

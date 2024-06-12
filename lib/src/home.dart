@@ -69,6 +69,13 @@ class Home extends StatelessWidget {
               Get.to(DependencyManagePage());
             },
             child: const Text('의존성 관리'),
+          ),
+          const SizedBox(height: 16),
+          ElevatedButton(
+            onPressed: () {
+              Get.toNamed("/binding");
+            },
+            child: const Text('바인딩 관리'),
           )
         ],
       )),

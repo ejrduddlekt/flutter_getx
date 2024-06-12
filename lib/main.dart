@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_study/src/home.dart';
 import 'package:getx_study/src/pages/Next.dart';
+import 'package:getx_study/src/pages/binding.dart';
+import 'package:getx_study/src/pages/controller/count_controller_with_getx.dart';
 import 'package:getx_study/src/pages/named/firstNamed.dart';
 import 'package:getx_study/src/pages/named/secondNamed.dart';
 import 'package:getx_study/src/pages/user.dart';
@@ -35,10 +37,26 @@ class MyApp extends StatelessWidget {
       //GetX의 방식
       getPages: [
         GetPage(name: "/", page: () => Home(), transition: Transition.fade),
-        GetPage(name: "/first", page: () => FirstNamedPage(), transition: Transition.zoom),
-        GetPage(name: "/second", page: () => SecondNamedPage(), transition: Transition.leftToRightWithFade),
-        GetPage(name: "/next", page: () => NextPage(), transition: Transition.zoom),
-        GetPage(name: "/user/:uid", page: () => UserPage(), transition: Transition.zoom)
+        GetPage(
+            name: "/first",
+            page: () => FirstNamedPage(),
+            transition: Transition.zoom),
+        GetPage(
+            name: "/second",
+            page: () => SecondNamedPage(),
+            transition: Transition.leftToRightWithFade),
+        GetPage(
+            name: "/next", page: () => NextPage(), transition: Transition.zoom),
+        GetPage(
+            name: "/user/:uid",
+            page: () => UserPage(),
+            transition: Transition.zoom),
+        GetPage(
+            name: "/binding",
+            page: () => BindingPage(),
+            binding: BindingsBuilder(() {
+              Get.put(CountControllerWithGetx());
+            }))
       ],
     );
   }
